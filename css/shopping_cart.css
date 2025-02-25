@@ -1,0 +1,404 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+
+
+
+
+
+/* Encabezado */
+header {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(135deg, #6b11cb2c, #2574fc1a);
+    backdrop-filter: blur(10px); /* Aplica desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 200;
+}
+
+.cart {
+    font-size: 1em;
+    background-color: #369c7e9a;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cart:hover {
+    background-color: #74ffd528;
+    transform: scale(1.05);
+}
+
+/* Estilos para el dropdown del carrito */
+.cart-dropdown {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    
+
+    table {
+        color: #333;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        box-sizing: border-box; /* Mejor usar 'border-box' para un mejor control de los tamaños */
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        
+    }
+    
+    /* Encabezado de la tabla */
+    thead {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+        padding: 0px;
+        width: 100%;
+    }
+    
+    thead tr {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0px;
+    }
+    
+    th {
+        padding: 15px;
+        font-weight: bold;
+        font-size: 13px;
+        flex: 1; /* Para distribuir el espacio equitativamente */
+    }
+    
+    /* Cuerpo de la tabla */
+    tbody {
+        font-size: 13px;
+    }
+    
+    tbody tr {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    tbody tr:hover {
+        background-color: #f8f8f8;
+    }
+    
+    /* Imágenes en las columnas */
+    tbody img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    /* Celdas de la tabla */
+    td {
+        padding: 10px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.error-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Tamaño del botón */
+    height: 30px;
+    background: red;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50%; /* Lo hace redondo */
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.error-button:hover {
+    background: darkred;
+    transform: scale(1.1);
+}
+
+.error-button:active {
+    transform: scale(0.95);
+}
+
+
+.button-full {
+    display: block; /* Hace que ocupe todo el ancho */
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background: linear-gradient(135deg, #06b6d4, #3b82f6); /* Degradado tipo Tailwind */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+
+.button-full:hover {
+    background: linear-gradient(135deg, #0284c7, #2563eb);
+    transform: scale(1.02);
+}
+
+.cart:hover .cart-dropdown {
+    display: block;
+}
+
+.cart-dropdown li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-dropdown li:last-child {
+    border-bottom: none;
+}
+
+/* fin del encabezado */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sección Hero - Diseño Premium */
+.hero {
+    height: 500px;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.7) 10%, rgba(6, 181, 212, 0.37) 50%, rgba(59, 131, 246, 0.171) 90%), 
+                url('https://www.esic.edu/sites/default/files/rethink/ba73d6a3-ecommerce.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+/* Contenido del Hero */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+/* Buscador Avanzado */
+.hero-search {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50px;
+    padding: 8px;
+    overflow: hidden;
+    max-width: 450px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.hero-search:hover {
+    transform: scale(1.05);
+}
+
+.hero-search input {
+    flex: 1;
+    border: none;
+    padding: 12px 15px;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 50px 0 0 50px;
+    background: none;
+    color: #333;
+}
+
+.hero-search input::placeholder {
+    color: #666;
+    font-weight: 300;
+}
+
+.hero-search button {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 0 50px 50px 0;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.hero-search button:hover {
+    background: linear-gradient(135deg, #2563eb, #0284c7);
+    transform: scale(1.1);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-search {
+        max-width: 350px;
+    }
+}
+
+/* Fin de la seccion hero */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Productos */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 250px;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 150px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h2 {
+    font-size: 1.4em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Botón Agregar */
+.add-to-cart {
+    background: linear-gradient(135deg, #00c853, #b2ff59);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(135deg, #00a73e, #8ee000);
+    transform: scale(1.05);
+}

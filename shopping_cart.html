@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Carrito de Compras</title>
+    <link rel="stylesheet" href="css/shopping_cart.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tienda Online</h1>
+        <div class="cart">
+            🛒 Carrito (<span id="cart-count">0</span>)
+            <ul class="cart-dropdown" id="cart-dropdown">
+                <table>
+                    <caption>Lista de Productos:</caption>
+                    <thead class="thead">
+                        <tr class="head">
+                            <th>Imagen</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+                <button id="vaciar" class="button-full">Vaciar carrito</button>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seccion hero -->
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Compra Inteligente, Compra Fácil</h1>
+                <p>Los mejores productos con los mejores precios, al alcance de un clic.</p>
+                <div class="hero-search">
+                    <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos">
+                    <button aria-label="Buscar">🔍</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- fin de la seccion hero -->
+
+        <!-- Seccion productos -->
+
+        <section class="products">
+            <div class="product">
+                <img src="https://mobomx.vtexassets.com/arquivos/ids/196876-800-auto?v=638212067600330000&width=800&height=auto&aspect=true" alt="Audífonos Bluetooth">
+                <h2>Audífonos Bluetooth</h2>
+                <p>Precio: <span>$50</span></p>
+                <button  data-id="1"  class="add-to-cart" data-name="Audífonos Bluetooth" data-price="50">Agregar</button>
+                
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71u0TUOKg3L._AC_UF894,1000_QL80_.jpg" alt="Reloj Inteligente">
+                <h2>Reloj Inteligente</h2>
+                <p>Precio: <span>$120</span></p>
+                <button data-id="2" class="add-to-cart" data-name="Reloj Inteligente" data-price="120">Agregar</button>
+                
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/41BbhyH8paL._AC_SY580_.jpg" alt="Mochila de Viaje">
+                <h2>Mochila de Viaje</h2>
+                <p>Precio: <span>$160</span></p>
+                <button data-id="3" class="add-to-cart" data-name="Mochila de Viaje" data-price="80">Agregar</button>
+                
+            </div>
+
+            <div class="product">
+                <img src="https://www.radioshack.com.mx/store/medias/100187933.jpg-515ftw?context=bWFzdGVyfHJvb3R8MTM4NDIxfGltYWdlL2pwZWd8YUdRM0wyaGhaUzg1TVRrM09EVTJNamt5T0RrMEx6RXdNREU0Tnprek15NXFjR2RmTlRFMVpuUjN8Yjk2YTY5YWU5YjRkZjlmODQyZmVkNTNkNTdkYTBiNjJiMzliNTU2YjJhOTk0MDE3OWM0ZGFhZTJlMTdhZjlkMw" alt="Mochila de Viaje">
+                <h2>Telefono</h2>
+                <p>Precio: <span>$160</span></p>
+                <button data-id="4" class="add-to-cart" data-name="Mochila de Viaje" data-price="80">Agregar</button>
+                
+            </div>
+
+            <div class="product">
+                <img src="https://chedrauimx.vtexassets.com/arquivos/ids/44323682-800-auto?v=638756723982430000&width=800&height=auto&aspect=true" alt="Mochila de Viaje">
+                <h2>Laptop</h2>
+                <p>Precio: <span>$160</span></p>
+                <button data-id="5" class="add-to-cart" data-name="Mochila de Viaje" data-price="80">Agregar</button>
+                
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/41BbhyH8paL._AC_SY580_.jpg" alt="Mochila de Viaje">
+                <h2>Mochila de Viaje</h2>
+                <p>Precio: <span>$160</span></p>
+                <button data-id="6" class="add-to-cart" data-name="Mochila de Viaje" data-price="80">Agregar</button>
+                
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/41BbhyH8paL._AC_SY580_.jpg" alt="Mochila de Viaje">
+                <h2>Mochila de Viaje</h2>
+                <p>Precio: <span>$160</span></p>
+                <button data-id="7" class="add-to-cart" data-name="Mochila de Viaje" data-price="80">Agregar</button>
+                
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/41BbhyH8paL._AC_SY580_.jpg" alt="Mochila de Viaje">
+                <h2>Mochila de Viaje</h2>
+                <p>Precio: <span>$160</span></p>
+                <button data-id="8" class="add-to-cart" data-name="Mochila de Viaje" data-price="80">Agregar</button>
+                
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/41BbhyH8paL._AC_SY580_.jpg" alt="Mochila de Viaje">
+                <h2>Mochila de Viaje</h2>
+                <p>Precio: <span>$160</span></p>
+                <button data-id="9" class="add-to-cart" data-name="Mochila de Viaje" data-price="80">Agregar</button>
+                
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/41BbhyH8paL._AC_SY580_.jpg" alt="Mochila de Viaje">
+                <h2>Mochila de Viaje</h2>
+                <p>Precio: <span>$160</span></p>
+                <button data-id="10" class="add-to-cart" data-name="Mochila de Viaje" data-price="80">Agregar</button>
+                
+            </div>
+        </section>
+
+        <!-- Fin de la seccion prodcutos -->
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
