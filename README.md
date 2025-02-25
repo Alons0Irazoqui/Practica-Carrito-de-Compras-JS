@@ -29,6 +29,9 @@ Es una tienda en línea simple con un **carrito de compras dinámico**. Los usua
    ```
 2. Abrir el archivo `shopping_cart.html` en un navegador.
 3. Explorar los productos y usar el carrito.
+   
+##🚀 Objetivo de la Práctica
+Este repositorio está diseñado para aprender y practicar el manejo de eventos, arrays, localStorage y la manipulación del DOM en JavaScript puro sin librerías adicionales.
 
 ## 📧 Contacto
 Si tienes sugerencias o mejoras, ¡estaré encantado de recibir feedback! 😊
