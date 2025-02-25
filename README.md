@@ -11,7 +11,6 @@ Este proyecto es un **carrito de compras interactivo**, desarrollado con **JavaS
 ## 🌟 Características
 ✅ **Agregar y eliminar productos** dinámicamente.  
 ✅ **Actualizar cantidades** de productos en tiempo real.  
-✅ **Almacenamiento en LocalStorage** para mantener los productos agregados.  
 ✅ **Interfaz atractiva y responsive** con Tailwind CSS.  
 
 ## 🚀 Instalación y Uso
