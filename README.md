@@ -3,6 +3,10 @@
 ## 📌 Descripción
 Este proyecto es un **carrito de compras interactivo**, desarrollado con **JavaScript Vanilla, Tailwind CSS, HTML y CSS**. Su propósito principal es **practicar la manipulación del DOM, eventos y almacenamiento local en JavaScript** sin utilizar frameworks ni librerías adicionales.
 
+![Accede al Proyecto](https://img.shields.io/badge/🔗%20Accede%20al%20Proyecto-008000?style=for-the-badge&logo=google-chrome&logoColor=white)  
+👉 **[Haz clic aquí](https://alons0irazoqui.github.io/Practica-Carrito-de-Compras-JS/)** para ver el proyecto.
+
+
 ## 🛠️ Tecnologías Utilizadas
 - 🚀 **HTML**: Estructura del carrito de compras.
 - 🎨 **Tailwind CSS**: Diseño moderno y estilizado.
